@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+.dark .bg-dashboard {
+  background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 :root {
   --color-primary: #009b7d;
   --bg-gradient-from: #9ee7e2;
@@ -29,6 +39,8 @@ body,
     var(--bg-gradient-to)
   );
 }
+
+
 
 @media (max-width: 767px) {
   /* مثال: padding صفحه در موبایل کمتر شود */
