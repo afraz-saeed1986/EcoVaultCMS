@@ -34,7 +34,7 @@ export default async function Home() {
         </div>
 
         {/* Hero title with gradient text */}
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight">
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight dark:text-slate-900">
           EcoVault{" "}
           <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
             CMS
@@ -49,7 +49,7 @@ export default async function Home() {
         </div>
 
         {/* CTA section */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-12">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-12 text-white">
           <Link
             href="/login"
             className="group bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white px-10 py-5 rounded-3xl font-bold text-lg shadow-xl transition-all duration-300 flex items-center gap-3 transform hover:scale-105"
@@ -57,7 +57,7 @@ export default async function Home() {
             Get Started
             <ArrowRight
               size={24}
-              className="group-hover:translate-x-2 transition-transform duration-300"
+              className="group-hover:translate-x-2 transition-transform duration-300 text-white"
             />
           </Link>
 

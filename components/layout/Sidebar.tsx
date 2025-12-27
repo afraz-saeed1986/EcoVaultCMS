@@ -11,13 +11,17 @@ import {
   MessageSquare,
   Star,
   LogOut,
+  User2,
+  BrickWallFire,
 } from "lucide-react";
 
 type Props = { onNavigate?: () => void };
 
 const items = [
   { name: "Dashboard", icon: LayoutDashboard, active: true },
-  { name: "Product", icon: Package, active: false },
+  { name: "Products", icon: Package, active: false },
+  { name: "Users", icon: User2, active: false },
+  { name: "Coupons", icon: BrickWallFire, active: false },
   { name: "Analytics", icon: BarChart2, active: false },
   { name: "Sale", icon: Tag, active: false },
   { name: "Review", icon: Star, active: false },
@@ -50,17 +54,16 @@ export default function Sidebar({ onNavigate }: Props) {
   };
 
   return (
-    <div className="flex flex-col h-full text-slate-800 dark:text-slate-200 dark:bg-black"> {/* bg مشکی در dark اضافه شد */}
+    <div className="flex flex-col h-full text-slate-800 dark:text-slate-200 dark:dark:bg-slate-900">
+      {" "}
+      {/* bg مشکی در dark اضافه شد */}
       {/* لوگو – متن از parent inherit می‌کنه */}
       <div className="flex items-center gap-3 mb-8">
         <div className="w-10 h-10 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
           l
         </div>
-        <span className="font-black tracking-tight text-xl">
-          lessa
-        </span>
+        <span className="font-black tracking-tight text-xl">lessa</span>
       </div>
-
       {/* منوی اصلی – آیتم‌ها روی بک‌گراند مشکی در dark */}
       <nav className="flex-1 space-y-2">
         {items.map((it) => {
@@ -72,16 +75,18 @@ export default function Sidebar({ onNavigate }: Props) {
               className={`w-full flex items-center gap-4 px-5 py-3 rounded-2xl transition-all duration-300 font-semibold text-sm group ${
                 it.active
                   ? "bg-white/90 dark:bg-slate-900/80 shadow-sm text-teal-600 dark:text-teal-400"
-                  : "hover:bg-white/50 dark:hover:bg-slate-900/60"
+                  : "hover:bg-white/50 dark:hover:bg-slate-600 dark:hover:text-teal-400"
               }`}
             >
-              <Icon size={18} className="text-current transition-colors duration-300" />
+              <Icon
+                size={18}
+                className="text-current transition-colors duration-300"
+              />
               <span>{it.name}</span>
             </button>
           );
         })}
       </nav>
-
       {/* دکمه Sign Out – روی مشکی ملایم‌تر */}
       <div className="mt-6">
         <button

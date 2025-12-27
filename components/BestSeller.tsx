@@ -10,7 +10,7 @@ export default function BestSeller() {
   ];
 
   return (
-    <div className="bg-white rounded-2xl p-4 shadow-md">
+    <div className="bg-white rounded-2xl p-4 shadow-md  dark:bg-slate-950">
       <div className="font-bold mb-3">Best Seller</div>
       <div className="space-y-3">
         {products.map((p) => (

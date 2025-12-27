@@ -22,9 +22,9 @@ export default function Header({
   };
 
   return (
-    <header className="h-20 bg-white/60 backdrop-blur-2xl rounded-[2.5rem] shadow-sm border border-white/60 flex items-center justify-between px-4 md:px-8">
+    <header className="h-28 md:h-20 bg-white/60 dark:bg-slate-900 backdrop-blur-2xl rounded-[2.5rem] shadow-sm border border-white/60 flex items-center justify-between px-4 md:px-8">
       <div>
-        <div className="text-slate-700 font-bold text-lg">
+        <div className="text-slate-700 font-bold text-lg dark:text-white">
           Good morning Liz 👋
         </div>
         <div className="text-sm text-slate-400">
@@ -42,7 +42,9 @@ export default function Header({
         </button>
 
         <div className="hidden md:flex items-center gap-4">
-          <div className="text-slate-600 font-semibold">$566.55</div>
+          <div className="text-slate-600 font-semibold dark:text-white">
+            $566.55
+          </div>
           <button className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-slate-400 border border-slate-100">
             <Bell size={18} />
           </button>

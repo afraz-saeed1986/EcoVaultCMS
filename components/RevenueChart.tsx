@@ -22,10 +22,13 @@ const data = [
 
 export default function RevenueChart() {
   return (
-    <div style={{ width: "100%", height: 180 }}>
+    <div
+      style={{ width: "100%", height: 180 }}
+      className="dark:  dark:bg-slate-900"
+    >
       <ResponsiveContainer>
         <LineChart data={data}>
-          <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
+          <CartesianGrid strokeDasharray="4 0" stroke="#f1f5f9" />
           <XAxis dataKey="date" tick={{ fill: "#94a3b8", fontSize: 12 }} />
           <YAxis hide />
           <Tooltip />

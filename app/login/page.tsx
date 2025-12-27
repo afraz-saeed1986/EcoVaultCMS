@@ -153,7 +153,7 @@ export default function AuthPage() {
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full pl-11 pr-4 py-3.5 bg-white/40 border border-slate-200 rounded-xl focus:bg-white focus:ring-4 focus:ring-teal-500/10 focus:border-teal-400 outline-none transition-all text-sm"
+                  className="w-full pl-11 pr-4 py-3.5 bg-white/40 border border-slate-200 rounded-xl focus:bg-white focus:ring-4 focus:ring-teal-500/10 focus:border-teal-400 outline-none transition-all text-sm dark:text-slate-900"
                   placeholder="••••••••"
                 />
               </div>

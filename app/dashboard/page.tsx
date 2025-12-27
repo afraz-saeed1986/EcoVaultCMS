@@ -25,7 +25,7 @@ export default function DashboardPage() {
         {/* ستون اصلی (آمار + نمودار + اطلاعات اضافی + بست سلر) */}
         <div className="lg:col-span-2 space-y-6">
           {/* کارت‌های آماری بالا - responsive */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ">
             <StatCard label="Total sales" value="321k" />
             <StatCard label="Visitor" value="678k" />
             <StatCard label="Cvr" value="7.89" />
@@ -35,7 +35,7 @@ export default function DashboardPage() {
           {/* بخش پایین: نمودار revenue + need more info + best seller */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* Summary Revenue - در موبایل و تبلت full-width، در md+ دو سوم */}
-            <div className="md:col-span-2 bg-white/60 backdrop-blur-2xl rounded-3xl p-6 shadow-sm border border-white/60">
+            <div className="md:col-span-2 bg-white/60 backdrop-blur-2xl rounded-3xl p-6 shadow-sm border border-white/60 dark: dark:bg-slate-950">
               <div className="flex items-center justify-between mb-4">
                 <div className="font-bold text-lg">Summary Revenue</div>
                 <div className="text-sm text-slate-400">
@@ -51,7 +51,7 @@ export default function DashboardPage() {
 
             {/* ستون راست: Need more info + Best Seller - عمودی در همه سایزها */}
             <div className="space-y-4">
-              <div className="bg-white/60 backdrop-blur-2xl rounded-3xl p-6 shadow-sm border border-white/60">
+              <div className="bg-white/60 backdrop-blur-2xl rounded-3xl p-6 shadow-sm border border-white/60 dark: dark:bg-slate-950">
                 <div className="font-bold text-lg">Need more information?</div>
                 <div className="text-sm text-slate-400 mt-2">
                   Present information in a visually appealing way
